@@ -212,24 +212,6 @@ p{
 }
 
 /**************************** GRID-ITEM-BACKGROUND-IMAGES */
-.grid-list-item:nth-child(2) {
-	background-image:
-		linear-gradient(
-			rgba(0,0,0,0.4),
-			rgba(0,0,0,0.4)
-		),
-		url(../images/potatomountain.jpg);
-	background-size: cover;
-}
-.grid-list-item:nth-child(2):hover {
-	background-image:
-		linear-gradient(
-			rgba(0,0,0,0),
-			rgba(0,0,0,0)
-		),
-		url(../images/potatomountain.jpg);
-	background-size: cover;
-}
 .grid-list-item:nth-child(1) {
 	background-image:
 		linear-gradient(
@@ -246,6 +228,24 @@ p{
 			rgba(0,0,0,0)
 		),
 		url(../images/icehousesaddle-grid.jpg);
+	background-size: cover;
+}
+.grid-list-item:nth-child(2) {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0.4),
+			rgba(0,0,0,0.4)
+		),
+		url(../images/potatomountain.jpg);
+	background-size: cover;
+}
+.grid-list-item:nth-child(2):hover {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0),
+			rgba(0,0,0,0)
+		),
+		url(../images/potatomountain.jpg);
 	background-size: cover;
 }
 .grid-list-item:nth-child(3) {
@@ -320,13 +320,22 @@ p{
 		url(../images/hellman.jpg);
 	background-size: cover;
 }
-.grid-list-item:nth-child(9) {
+.grid-list-item:nth-child(7) {
 	background-image:
 		linear-gradient(
 			rgba(0,0,0,0.4),
 			rgba(0,0,0,0.4)
 		),
-		url(../images/wilson.jpg);
+		url(../images/punkout.jpg);
+	background-size: cover;
+}
+.grid-list-item:nth-child(7):hover {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0),
+			rgba(0,0,0,0)
+		),
+		url(../images/punkout.jpg);
 	background-size: cover;
 }
 .grid-list-item:nth-child(8):hover {
@@ -347,6 +356,15 @@ p{
 		url(../images/chinohills.jpg);
 	background-size: cover;
 }
+.grid-list-item:nth-child(9) {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0.4),
+			rgba(0,0,0,0.4)
+		),
+		url(../images/wilson.jpg);
+	background-size: cover;
+}
 .grid-list-item:nth-child(9):hover {
 	background-image:
 		linear-gradient(
@@ -354,6 +372,24 @@ p{
 			rgba(0,0,0,0)
 		),
 		url(../images/wilson.jpg);
+	background-size: cover;
+}
+.grid-list-item:nth-child(10) {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0.4),
+			rgba(0,0,0,0.4)
+		),
+		url(../images/nira.jpg);
+	background-size: cover;
+}
+.grid-list-item:nth-child(10):hover {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0),
+			rgba(0,0,0,0)
+		),
+		url(../images/nira.jpg);
 	background-size: cover;
 }
 .grid-list-item:nth-child(11) {
@@ -374,6 +410,24 @@ p{
 		url(../images/potato2.jpg);
 	background-size: cover;
 }
+.grid-list-item:nth-child(12) {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0.4),
+			rgba(0,0,0,0.4)
+		),
+		url(../images/ctop.jpg);
+	background-size: cover;
+}
+.grid-list-item:nth-child(12):hover {
+	background-image:
+		linear-gradient(
+			rgba(0,0,0,0),
+			rgba(0,0,0,0)
+		),
+		url(../images/ctop.jpg);
+	background-size: cover;
+}
 
 /************************* GRID-ITEM-BACKGROUND-OPEN-COLOR **/
 /*ICE-HOUSE*/
@@ -382,7 +436,153 @@ p{
 }
 
 /*** Media Queries ***/
-@media screen and (max-width: 1023px) {
+
+/*Galaxy S3/S5/Note2 */
+
+@media (max-width: 374px) {
+    /************************************* Main Container **/
+    body {
+	    background-size: auto 300%;
+	}
+	h1{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.main-header{
+		font-size: 1.5em;
+		font-weight: 100;
+	}
+	.grid-list-item{
+		width: 100%;
+		height: 10em;
+	}
+	.grid-trail-name{
+		font-size: 1.7em;
+	}
+	.grid-loc {
+		font-size: 1.5em;
+	}
+
+	.grid-list-item > div {
+		text-align: center;
+	}
+	li{
+		margin: 1%;
+		padding: 1.4em;
+		width: 24%;
+		height: 15em;
+		border-radius: 2px;
+	}
+	.info-flex-child{
+	    	width: 100%;
+	 }
+
+}
+/*Iphone 6 / Galaxy Note*/
+
+@media (min-width: 375px) and (max-width: 400px) {
+    /************************************* Main Container **/
+    body {
+	    background-size: auto 300%;
+	}
+	h1{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.main-header{
+		font-size: 2em;
+		font-weight: 100;
+	}
+	.grid-list-item{
+		width: 100%;
+		height: 10em;
+	}
+	.grid-trail-name{
+		font-size: 2.1em;
+	}
+	.grid-loc {
+		font-size: 1.8em;
+	}
+
+	.grid-list-item > div {
+		text-align: center;
+	}
+	.info-flex-child{
+	    	width: 100%;
+	 }
+
+}
+/*Iphone 6+ */
+
+@media (min-width: 401px) and (max-width: 479px) {
+    /************************************* Main Container **/
+    body {
+	    background-size: auto 300%;
+	}
+	h1{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.main-header{
+		font-size: 2em;
+		font-weight: 100;
+	}
+	.grid-list-item{
+		width: 100%;
+		height: 10em;
+	}
+	.grid-trail-name{
+		font-size: 2.1em;
+	}
+	.grid-loc {
+		font-size: 1.8em;
+	}
+
+	.grid-list-item > div {
+		text-align: center;
+	}
+	.info-flex-child{
+	    	width: 100%;
+	 }
+
+}
+/*Kindle / Galaxy Tab / Nexus v1*/
+
+@media (min-width: 480px) and (max-width: 604px) {
+    /************************************* Main Container **/
+    body {
+	    background-size: auto 300%;
+	}
+	h1{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.main-header{
+		font-size: 2em;
+		font-weight: 100;
+	}
+	.grid-list-item{
+		width: 100%;
+		height: 10em;
+	}
+	.grid-trail-name{
+		font-size: 2.1em;
+	}
+	.grid-loc {
+		font-size: 1.8em;
+	}
+
+	.grid-list-item > div {
+		text-align: center;
+	}
+	.info-flex-child{
+	    	width: 100%;
+	 }
+}
+/*Surface Pro 1/2*/
+
+@media (min-width: 605px) and (max-width: 720px) {
+    /************************************************ Main Container **/
 	body {
 	    background-size: auto 300%;
 	}
@@ -399,10 +599,10 @@ p{
 		height: 10em;
 	}
 	.grid-trail-name{
-		font-size: 2.3em;
+		font-size: 2.1em;
 	}
 	.grid-loc {
-		font-size: 1.9em;
+		font-size: 1.8em;
 	}
 
 	.grid-list-item > div {
@@ -412,4 +612,108 @@ p{
 	    	width: 100%;
 	 }
 }
+/*Surface /  iPad / iPad mini / iPad air*/
 
+@media (min-width: 721px) and (max-width: 799px) {
+    /************************************************ Main Container **/
+	body {
+	    background-size: auto 300%;
+	}
+	h1{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.main-header{
+		font-size: 2em;
+		font-weight: 100;
+	}
+	.grid-list-item{
+		width: 100%;
+		height: 10em;
+	}
+	.grid-trail-name{
+		font-size: 2.1em;
+	}
+	.grid-loc {
+		font-size: 1.8em;
+	}
+
+	.grid-list-item > div {
+		text-align: center;
+	}
+	.info-flex-child{
+	    	width: 100%;
+	 }
+}
+/*Surface /  iPad / iPad mini / iPad air*/
+
+@media (min-width: 800px) and (max-width: 1023px) {
+	body {
+	    background-size: auto 300%;
+	}
+	h1{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.main-header{
+		font-size: 2em;
+		font-weight: 100;
+	}
+	.grid-list-item{
+		width: 100%;
+		height: 10em;
+	}
+	.grid-trail-name{
+		font-size: 2.1em;
+	}
+	.grid-loc {
+		font-size: 1.8em;
+	}
+
+	.grid-list-item > div {
+		text-align: center;
+	}
+	.info-flex-child{
+	    	width: 100%;
+	 }
+}
+/*Computer (laptop/netbook) / iPad Pro / Surface Pro 3*/
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+	body {
+	    background-size: auto 300%;
+	}
+	h1{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.main-header{
+		font-size: 2.8em;
+		font-weight: 100;
+	}
+	.grid-list-item{
+		width: 100%;
+		height: 10em;
+	}
+	.grid-trail-name{
+		font-size: 2.4em;
+	}
+	.grid-loc {
+		font-size: 2.1em;
+	}
+
+	.grid-list-item > div {
+		text-align: center;
+	}
+	.info-flex-child{
+	    	width: 100%;
+	 }
+}
+/*Computer medium*/
+
+@media (min-width: 1281px) and (max-width: 1365px) {}
+/*Computer large*/
+
+@media (min-width: 1366px) {
+
+}
