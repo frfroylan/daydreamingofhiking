@@ -150,8 +150,6 @@ li:hover .grid-loc {
 	font-size: 1em;
 	line-height: 1.2;
 }
-
-
 /************************ INFO SECTION ****/
 .info-flex{
     display: flex;
@@ -163,13 +161,11 @@ li:hover .grid-loc {
     height: 100%;
     overflow: scroll;
 }
-
 .info-flex-child{
     width: 49%;
     height: 49%;
     display: none;
 }
-
 /** INFO-MAP **/
 .map{
 	width: 100%;
@@ -432,7 +428,7 @@ p{
 /************************* GRID-ITEM-BACKGROUND-OPEN-COLOR **/
 /*ICE-HOUSE*/
 .grid-list-item .grid-trail > div{
-	background: #5C70AF;
+	background: #1E8BC3;
 }
 
 /*** Media Queries ***/
@@ -861,18 +857,18 @@ p{
 	    	width: 100%;
 	}
 	.info-map, .info-graph{
-	 	height: 70%;
+	 	height: 80%;
 	 	width: 90%;
 	 }
 	 .info-map{
-	 	margin-top: -100px;
+	 	margin-top: -70px;
 	}
 	 .info-graph{
 	 	margin-top: 35px;
 	 }
 	 .info-pic{
 		width: 90%;
-		height: 120%;
+		height: 140%;
 		margin-top: 35px;
 	}
 	.info-sum-header{
@@ -882,5 +878,39 @@ p{
 		margin-left: 40px;
 		margin-right: 40px;
 		margin-top: 10px;
+	}
+	.info-sum-text{
+		font-size: 1.6em;
+		line-height: 1.6em;
+	}
+}
+@media (min-width: 1281px) and (max-width: 1440px){
+	.info-sum-header{
+		font-size: 3em;
+	}
+	/** INFO-TEXT **/
+	p{
+		margin-left: 30px;
+		margin-right: 20px;
+		margin-top: 10px;
+	}
+	.info-sum-text{
+		font-size: 1.5em;
+		line-height: 1.4em;
+	}
+}
+@media (min-width: 1441px) {
+	.info-sum-header{
+		font-size: 3em;
+	}
+	/** INFO-TEXT **/
+	p{
+		margin-left: 20px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	.info-sum-text{
+		font-size: 1.5em;
+		line-height: 1.5em;
 	}
 }
