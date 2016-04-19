@@ -85,10 +85,7 @@ span.grid-loc{
 	-moz-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
-/*** GRID-TRAIL-NAME HOVER **/
-li:hover .grid-loc {
-	opacity: 1;
-}
+
 /**** GRID-OVERLAY ****/
 .grid-overlay {
 	opacity: 0;
@@ -431,7 +428,7 @@ p{
 	background: #1E8BC3;
 }
 
-/*** Media Queries ***/
+/************************************** Media Queries ***/
 
 /*Galaxy S3/S5/Note2 */
 
@@ -602,8 +599,8 @@ p{
 	}
 
 }
-/*Kindle / Galaxy Tab / Nexus v1*/
 
+/*Kindle / Galaxy Tab / Nexus v1*/
 @media (min-width: 480px) and (max-width: 604px) {
     /************************************* Main Container **/
     body {
@@ -853,6 +850,9 @@ p{
 	.grid-list-item > div {
 		text-align: center;
 	}
+	li:hover .grid-loc {
+		opacity: 1;
+	}
 	.info-flex-child{
 	    	width: 100%;
 	}
@@ -885,6 +885,9 @@ p{
 	}
 }
 @media (min-width: 1281px) and (max-width: 1440px){
+	li:hover .grid-loc {
+		opacity: 1;
+	}
 	.info-sum-header{
 		font-size: 3em;
 	}
@@ -900,6 +903,9 @@ p{
 	}
 }
 @media (min-width: 1441px) {
+	li:hover .grid-loc {
+		opacity: 1;
+	}
 	.info-sum-header{
 		font-size: 3em;
 	}
